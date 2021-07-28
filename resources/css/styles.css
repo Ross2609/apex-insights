@@ -1,0 +1,9 @@
+html, body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #FFF;
+    background-color: #6B6C70;
+}
+
+.button__large {
+    width: auto;
+}
