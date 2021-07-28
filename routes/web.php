@@ -36,7 +36,7 @@ Route::get('player-stats', function () {
         }
     
         curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://public-api.tracker.gg/v2/apex/standard/profile/origin/do4p_z',
+        CURLOPT_URL => $url,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
