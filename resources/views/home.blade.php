@@ -8,9 +8,9 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Home Page</h1>
-    <form action="/insights">
-        <input type="submit" value="Insights" />
+    <form action="/insights" class="grid" >
+        <input type="submit" value="Insights" class="button__large bg-white bg-apex" style='color: #d99898; '/>
+        <input type="submit" value="Something" class="button__large bg-white bg-apex" style='color: #c2e6b8' />
     </form>
 </body>
 </html>

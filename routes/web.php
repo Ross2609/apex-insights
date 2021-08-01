@@ -30,7 +30,7 @@ Route::get('player-stats', function () {
     try {
         $curl = curl_init();
 
-        // Check if initialization had gone wrong*    
+        // Check if initialization had gone wrong  
         if ($curl === false) {
             throw new Exception('failed to initialize');
         }

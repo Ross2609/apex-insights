@@ -1,9 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+
 html, body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FFF;
-    background-color: #6B6C70;
+    background-color: #D7E4E8;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.bg-red {
+    background-color: #F75261;
+}
+
+.bg-lightblue {
+    background-color: #52C6F7;
+}
+
+.bg-green {
+    background-color: #52F56C;
+}
+
+.bg-orange {
+    background-color: #EDA84E   ;
+}
+
+.bg-purple {
+    background-color: #8B55E0;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-apex {
+    background-image: url("icons/apex-logo.png");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .button__large {
-    width: auto;
+    margin: auto;
+    width: 30vw;
+    height: 20vh;
+    font-size: 70px;
+    font-weight: 600;
+    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    padding: 80px 0 0 15px;
+}
+
+.button__large:hover {
+    background-color: #fffdeb;
+}
+
+.grid {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto;
+    height: 100%;
 }
