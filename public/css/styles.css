@@ -3,10 +3,62 @@
 html, body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FFF;
-    background-color: #D7E4E8;
+    background: linear-gradient(0deg, #9F2828, #2f0808);
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+h1 {
+    font-size: 80px;
+    font-family:'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+}
+
+h2 {
+    font-size: 36px;
+    font-family:'Poppins', Arial, sans-serif;
+    font-weight: 200;
+    margin: 0;
+}
+
+h3 {
+    font-size: 24px;
+    font-family:'Poppins', Arial, sans-serif;
+}
+
+.button--container {
+    display: flex;
+}
+
+.button--container * {
+    flex-basis: 100%;
+}
+
+.centered {
+    position: absolute;
+    margin: 0;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered input, .centered select {
+    margin: 0 10px;
+}
+
+.centered--heading {
+    position: absolute;
+    margin: 0;
+    top: 20%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%) scale(0.75);
+    transform: translate(-50%, -50%) scale(0.75);
+    text-align: center;
 }
 
 .bg-red {
@@ -22,7 +74,7 @@ html, body {
 }
 
 .bg-orange {
-    background-color: #EDA84E   ;
+    background-color: #EDA84E;
 }
 
 .bg-purple {
@@ -33,34 +85,10 @@ html, body {
     background-color: #fff;
 }
 
-.bg-apex {
-    background-image: url("icons/apex-logo.png");
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.button__large {
-    margin: auto;
-    width: 30vw;
-    height: 20vh;
-    font-size: 70px;
-    font-weight: 600;
-    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    border: none;
-    border-radius: 10px;
-    text-align: left;
-    padding: 80px 0 0 15px;
-}
-
-.button__large:hover {
-    background-color: #fffdeb;
-}
-
 .grid {
     display: grid;
     grid-column-gap: 10px;
     grid-template-columns: auto auto;
-    height: 100%;
+    height: 30%;
+    margin: auto;
 }

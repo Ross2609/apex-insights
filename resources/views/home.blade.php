@@ -13,9 +13,13 @@
     <title>Home</title>
 </head>
 <body>
-    <form action="/insights" class="grid" >
-        <input type="submit" value="Insights" class="button__large bg-white bg-apex" style='color: #d99898; '/>
-        <input type="submit" value="Something" class="button__large bg-white bg-apex" style='color: #c2e6b8' />
+    <div class="centered heading">
+        <img src="{{ Storage::url('icons/apex-logo.png') }}" height="200px"/>
+        <h1 style="font-size: 80px;">Apex Legends</h1>
+        <h2 style="color: #151515">STAN Tool</h2>
+    </div>
+    <form action="/insights" class="centered button--container" style="top: 63%">
+        <input type="submit" value="Insights" id="insights_btn" class="btn btn-light btn-lg btn-block" style="margin: 0 10px; padding: 10px 30px" />
     </form>
 </body>
 </html>
