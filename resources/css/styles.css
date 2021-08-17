@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
 
-html, body {
+html,
+body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FFF;
     background: linear-gradient(0deg, #9F2828, #2f0808);
@@ -11,7 +12,7 @@ html, body {
 
 h1 {
     font-size: 80px;
-    font-family:'Poppins', Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     font-weight: 600;
     margin: 0;
     color: white;
@@ -19,14 +20,15 @@ h1 {
 
 h2 {
     font-size: 36px;
-    font-family:'Poppins', Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     font-weight: 200;
     margin: 0;
 }
 
 h3 {
+    color: white;
     font-size: 24px;
-    font-family:'Poppins', Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 .button--container {
@@ -38,27 +40,37 @@ h3 {
 }
 
 .centered {
-    position: absolute;
-    margin: 0;
-    top: 40%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-.centered input, .centered select {
+.centered input,
+.centered select {
     margin: 0 10px;
 }
 
-.centered--heading {
-    position: absolute;
-    margin: 0;
-    top: 20%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%) scale(0.75);
-    transform: translate(-50%, -50%) scale(0.75);
-    text-align: center;
+.input--group {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.result--buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.result--buttons input {
+    background-color: rgb(70, 26, 26);
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 20px;
+    padding: 25px;
+    min-width: 200px;
+    border: 1px solid rgb(207, 207, 207);
 }
 
 .bg-red {
