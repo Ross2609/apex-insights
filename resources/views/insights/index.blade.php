@@ -18,7 +18,7 @@
         <h1 style="font-size: 80px;">Apex Legends</h1>
         <h2>STAN Tool</h2>
     </div>
-    <form action="/player-stats" method="GET" class="centered" style="display: flex;">
+    <form action="/insights/player-stats" method="GET" class="centered" style="display: flex;">
         <input id="username" class="form-control" name="username" type="text" placeholder="Enter Username"></input>
         <select id="platform" class="form-control" name="platform">
             <option value="origin">Origin</option>
