@@ -20,3 +20,5 @@ Route::get('/', function () {
 
 Route::get('insights', [InsightsController::class, 'index']);
 Route::get('insights/player-stats', [InsightsController::class, 'show']);
+Route::get('insights/player-segmented-stats', [InsightsController::class, 'show']);
+Route::get('insights/player-session-history', [InsightsController::class, 'show']);

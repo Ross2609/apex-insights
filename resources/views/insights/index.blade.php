@@ -25,19 +25,19 @@
     </div>
     <div style="width: 50%; margin: auto">
         <h3 style="color: white">Player Stats</h3>
-        <form action="/player-stats" method="GET" class="input--group">
+        <form method="GET" class="input--group">
             <input id="username" class="form-control" name="username" type="text" placeholder="Enter Username" />
             <select id="platform" class="form-control" name="platform">
                 <option value="origin">Origin</option>
                 <option value="xbox">Xbox One</option>
                 <option value="ps4">PS4</option>
             </select>
+            <div class="result--buttons" >
+                <input type="submit" formaction="insights/player-stats" class="form-control" value="Get Player Stats" />
+                <input type="submit" formaction="insights/player-segmented-stats" class="form-control" value="Get Player Segmented Stats" />
+                <input type="submit" formaction="insights/player-session-history" class="form-control" value="Get Player Session History" />
+            </div>
         </form>
-        <div class="result--buttons">
-            <input type="submit" class="form-control" value="Get Player Stats" />
-            <input type="submit" class="form-control" value="Get Player Segmented Stats" />
-            <input type="submit" class="form-control" value="Get Player Session History" />
-        </div>
     </div>
 </body>
 
