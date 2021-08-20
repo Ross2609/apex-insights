@@ -23,6 +23,7 @@ h2 {
     font-family: 'Poppins', Arial, sans-serif;
     font-weight: 200;
     margin: 0;
+    color: #151515
 }
 
 h3 {
@@ -103,4 +104,36 @@ h3 {
     grid-template-columns: auto auto;
     height: 30%;
     margin: auto;
+}
+
+.match--grid {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 50%;
+    margin: auto;
+}
+
+.match--card {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr;
+    background-color: #151515;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.match--card img {
+    margin: auto;
+}
+
+.match--stat {
+    display: flex;
+    margin: 0 20px;
+}
+
+.match--stat h3, .match--stat p {
+    flex: 1;
+    margin: auto 0;
 }

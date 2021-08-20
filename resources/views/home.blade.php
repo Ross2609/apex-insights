@@ -21,7 +21,7 @@
     <div class="centered heading" style="padding-top: 100px">
         <img src="{{ Storage::url('icons/apex-logo.png') }}" height="200px" />
         <h1 style="font-size: 80px;">Apex Legends</h1>
-        <h2 style="color: #151515">STAN Tool</h2>
+        <h2>STAN Tool</h2>
     </div>
     <form action="/insights" class="centered">
         <input type="submit" value="Insights" id="insights_btn" class="btn btn-light btn-lg btn-block"
