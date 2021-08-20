@@ -14,15 +14,34 @@
         <div class="match--card">
             <img width="250px" src={{ $match['metadata']['characterIconUrl']['value'] }} />
             <div class="match--stat">
+                <h3>Legend</h3>
+                <p>{{ $match['metadata']['character']['displayValue'] }}</p>
+            </div>
+            <div class="match--stat">
                 <h3>Match Date</h3>
-                <p>{{ $match['metadata']['endDate']['displayValue'] }}</p>
+                <p>{{ date('d-m-Y', strtotime($match['metadata']['endDate']['displayValue'])) }}</p>
             </div>
             <div class="match--stat">
                 <h3>Kills</h3>
                 <p>{{ $match['stats']['kills']['value'] }}</p>
             </div>
+            <div class="match--stat">
+                <h3>Rank Change</h3>
+                <p name="rank_change_value">{{ $match['stats']['rankScoreChange']['value'] }}</p>
+            </div>
         </div>
         @endforeach
     </div>
+    <script>
+        var rankChangeValues = document.getElementsByName('rank_change_value');
+
+        rankChangeValues.forEach(element => {
+            element.style['color'] = "green";
+
+            if (parseInt(element.textContent) < 0) {
+                element.style['color'] = "red";
+            }
+        });
+    </script>
 </body>
 </html>

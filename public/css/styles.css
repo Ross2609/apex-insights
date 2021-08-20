@@ -109,8 +109,8 @@ h3 {
 .match--grid {
     display: grid;
     grid-column-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 50%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 55%;
     margin: auto;
 }
 
@@ -118,7 +118,8 @@ h3 {
     display: grid;
     grid-column-gap: 10px;
     grid-template-columns: 1fr;
-    background-color: #151515;
+    background: linear-gradient(0deg, #151515, #333);
+    border: 2px #666 solid;
     margin: 20px;
     border-radius: 20px;
     padding: 10px;
@@ -136,4 +137,8 @@ h3 {
 .match--stat h3, .match--stat p {
     flex: 1;
     margin: auto 0;
+}
+
+.match--stat h3 {
+    font-size: 16px;
 }
