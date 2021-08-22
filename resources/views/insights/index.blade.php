@@ -30,8 +30,8 @@
                 <input id="username" class="form-control" name="username" type="text" placeholder="Enter Username" />
                 <select id="platform" class="form-control" name="platform">
                     <option value="origin">Origin</option>
-                    <option value="xbox">Xbox One</option>
-                    <option value="ps4">PS4</option>
+                    <option value="xb1">Xbox One</option>
+                    <option value="psn">PS4</option>
                 </select>
             </div>  
             <div class="result--buttons" >

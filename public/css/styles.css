@@ -109,9 +109,11 @@ h3 {
 .match--grid {
     display: grid;
     grid-column-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(30, 1fr);
     height: 55%;
     margin: auto;
+    /* overflow-x: hidden; */
+    overflow-y: hidden;
 }
 
 .match--card {
@@ -132,6 +134,7 @@ h3 {
 .match--stat {
     display: flex;
     margin: 0 20px;
+    color: #c9f095;
 }
 
 .match--stat h3, .match--stat p {
