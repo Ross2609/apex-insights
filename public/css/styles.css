@@ -4,7 +4,8 @@ html,
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #FFF;
-    background: linear-gradient(0deg, #9F2828, #2f0808);
+    /* background: linear-gradient(0deg, #9F2828, #2f0808);*/
+    background-image: url('https://compass-ssl.xbox.com/assets/3b/92/3b928596-dcf2-4922-85fb-e34f331036f3.jpg?n=Apex-Legends_GLP-Page-Hero-1084_1920x1080_02.jpg');
     margin: 0;
     padding: 0;
     height: 100%;
@@ -19,17 +20,19 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
-    font-family: 'Poppins', Arial, sans-serif;
-    font-weight: 200;
-    margin: 0;
-    color: #151515
+    font-family: 'Blocktastic', Arial, sans-serif;
+    font-weight: 600;
+    color: #3b3b3b
 }
 
 h3 {
-    color: white;
-    font-size: 24px;
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: 'Blocktastic', Arial, sans-serif;
+    margin: 0;
+    color: #3b3b3b
+}
+
+.centered-text {
+    text-align: center;
 }
 
 .button--container {
@@ -51,27 +54,41 @@ h3 {
 
 .input--group {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 0.5fr;
     column-gap: 10px;
     flex-direction: row;
     align-items: center;
-    margin: 20px auto;
+    margin: 25px auto;
+    padding: 10px;
 }
 
 .result--buttons {
     display: flex;
     flex-direction: row;
+    min-height: 125px;
 }
 
 .result--buttons input {
-    background-color: rgb(70, 26, 26);
-    color: white;
     font-weight: 400;
-    font-size: 18px;
-    margin: 20px;
-    padding: 25px;
+    font-family: 'Blocktastic', Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px !important;
+    background-color: transparent;
+    margin: 10px;
+    padding-bottom: 10px;
     min-width: 200px;
-    border: 1px solid rgb(207, 207, 207);
+    border: 5px solid #545557;
+    transition: background-color 0.25s, color 0.25s, border 0.25s, font-size 0.25s;
+    font-size: 25px;
+    font-weight: 300;
+    color: #64686b;
+    border-radius: 0;
+}
+
+.result--buttons input:hover {
+    background-color: rgb(255, 255, 255);
+    color: #ff4343;
+    border: 2px solid #545557;
 }
 
 .bg-red {
@@ -137,7 +154,8 @@ h3 {
     color: #c9f095;
 }
 
-.match--stat h3, .match--stat p {
+.match--stat h3,
+.match--stat p {
     flex: 1;
     margin: auto 0;
 }

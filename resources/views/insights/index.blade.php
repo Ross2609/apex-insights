@@ -18,28 +18,35 @@
 </head>
 
 <body>
-    <div class="centered heading" style="padding-top: 100px">
-        <img src="{{ Storage::url('icons/apex-logo.png') }}" height="200px" />
-        <h1 style="font-size: 80px;">Apex Legends</h1>
-        <h2>STAN Tool</h2>
-    </div>
-    <div style="width: 50%; margin: auto">
-        <h3 style="color: white">Player Stats</h3>
-        <form method="GET">
-            <div class="input--group">
-                <input id="username" class="form-control" name="username" type="text" placeholder="Enter Username" />
-                <select id="platform" class="form-control" name="platform">
-                    <option value="origin">Origin</option>
-                    <option value="xb1">Xbox One</option>
-                    <option value="psn">PS4</option>
-                </select>
-            </div>  
-            <div class="result--buttons" >
-                <input type="submit" formaction="insights/player-stats" class="form-control" value="Get Player Stats" />
-                <input type="submit" formaction="insights/player-segmented-stats" class="form-control" value="Get Player Segmented Stats" />
-                <input type="submit" formaction="insights/player-session-history" class="form-control" value="Get Player Session History" />
+    <div class="container" style="max-width: 90vw">
+        <div class="row justify-content-end" style="padding-top: 20vh">
+            <div class="col-5"
+                style="margin-top: 100px; padding: 25px; border: 5px rgb(255, 255, 255) solid; box-shadow: 3px 3px 10px rgb(112, 112, 112)">
+                <h2 class="centered-text" style="font-size: 3rem; margin-bottom: 30px">STAN Tool</h2>
+                <div>
+                    <h3 class="centered-text">Player Stats</h3>
+                    <form method="GET">
+                        <div class="input--group">
+                            <input id="username" class="form-control" name="username" type="text"
+                                placeholder="Enter Username" />
+                            <select id="platform" class="form-control" name="platform">
+                                <option value="origin">Origin</option>
+                                <option value="xb1">Xbox One</option>
+                                <option value="psn">PS4</option>
+                            </select>
+                        </div>
+                        <div class="result--buttons">
+                            <input type="submit" formaction="insights/player-stats" class="form-control"
+                                value="Stats" />
+                            <input type="submit" formaction="insights/player-segmented-stats" class="form-control"
+                                value="Segmented Stats" />
+                            <input type="submit" formaction="insights/player-session-history" class="form-control"
+                                value="Session History" />
+                        </div>
+                    </form>
+                </div>
             </div>
-        </form>
+        </div>
     </div>
 </body>
 
