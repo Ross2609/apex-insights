@@ -17,16 +17,21 @@
     <title>Home</title>
 </head>
 
-<body>
-    <div class="centered heading" style="padding-top: 100px">
-        <img src="{{ Storage::url('icons/apex-logo.png') }}" height="200px" />
-        <h1 style="font-size: 80px;">Apex Legends</h1>
-        <h2>STAN Tool</h2>
+<body style="background-image: url('/storage/backgrounds/apex-default.jpg');">
+    <div class="row justify-content-end" style="padding-top: 20vh">
+            <div class="col-5">
+                <div class="flex--container" style="gap: 15px">
+                    <img style="align-self: center" src="{{ Storage::url('icons/apex-logo.png') }}" height="200px" />
+                    <!-- <h1 style="font-size: 80px; text-align: center">Apex Legends</h1> -->
+                    <h1 style="font-size: 80px; text-align: center" >STAN Tool</h1>
+                    <form class="result--buttons" action="/insights" style="align-self: center">
+                        <input type="submit" value="Insights" id="insights_btn" class="btn btn-light btn-lg btn-block"
+                            style="margin: 0 10px; padding: 10px 30px;" />
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <form action="/insights" class="centered">
-        <input type="submit" value="Insights" id="insights_btn" class="btn btn-light btn-lg btn-block"
-            style="margin: 0 10px; padding: 10px 30px" />
-    </form>
 </body>
 
 </html>

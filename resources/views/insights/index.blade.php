@@ -18,10 +18,13 @@
 </head>
 
 <body>
-    <div class="container" style="max-width: 90vw">
-        <div class="row justify-content-end" style="padding-top: 20vh">
-            <div class="col-5"
-                style="margin-top: 100px; padding: 25px; border: 5px rgb(255, 255, 255) solid; box-shadow: 3px 3px 10px rgb(112, 112, 112)">
+    <div class="container" style="max-width: 90vw; padding-top: 50px">
+        <div class="flex--container">
+            <img style="align-self: center" src="{{ Storage::url('/icons/apex-logo.png') }}" width="175px"/>
+            <h1 style="font-size: 80px; text-align: center" >Apex Legends</h1>
+        </div>
+        <div style="padding-top: 10vh">
+            <div style="padding: 25px; border: 5px rgb(255, 255, 255) solid; box-shadow: 3px 3px 10px rgb(112, 112, 112)">
                 <h2 class="centered-text" style="font-size: 3rem; margin-bottom: 30px">STAN Tool</h2>
                 <div>
                     <h3 class="centered-text">Player Stats</h3>
