@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InsightsController;
+use App\Http\Controllers\PlayerStatsController;
 use App\Http\Controllers\SessionHistoryController;
 
 /*
@@ -20,9 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('insights', [InsightsController::class, 'index']);
-Route::get('insights/player-stats', function() {
-    return view('stats.stats');
-});
+Route::get('insights/player-stats', [PlayerStatsController::class, 'index']);
 
 Route::get('insights/player-segmented-stats', function() {
     return view('stats.segmented-stats');

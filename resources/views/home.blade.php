@@ -17,7 +17,7 @@
     <title>Home</title>
 </head>
 
-<body style="background-image: url('/storage/backgrounds/apex-default.jpg');">
+<body style="background-image: url('/storage/backgrounds/apex-background.jpg');">
     <div class="row justify-content-end" style="padding-top: 20vh">
             <div class="col-5">
                 <div class="flex--container" style="gap: 15px">

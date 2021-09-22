@@ -20,7 +20,7 @@
 <body>
     <div class="container" style="max-width: 90vw; padding-top: 50px">
         <div class="flex--container">
-            <img style="align-self: center" src="{{ Storage::url('/icons/apex-logo.png') }}" width="175px"/>
+            <img style="align-self: center" src="{{ Storage::url('icons/apex-logo.png') }}" width="175px"/>
             <h1 style="font-size: 80px; text-align: center" >Apex Legends</h1>
         </div>
         <div style="padding-top: 10vh">

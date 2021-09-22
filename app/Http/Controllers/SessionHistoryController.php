@@ -55,8 +55,6 @@ class SessionHistoryController extends Controller
             array_push($new_sessions, $session);
         }        
 
-        // ddd($new_sessions);
-
         return view('stats.session-history', 
             [
                 'sessions' => $new_sessions,
